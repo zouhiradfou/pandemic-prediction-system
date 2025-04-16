@@ -26,13 +26,18 @@ This system integrates five major Big Data technologies to create an end-to-end 
 ## Usage
 
 ### Step 1: Load Data into HDFS
-  1. Démarrer HDFS
-start-dfs.sh
-  2. Créer un répertoire HDFS pour les données
-hdfs dfs -mkdir -p /user/hiv_project/data
-  3. Charger le fichier CSV dans HDFS
-hdfs dfs -put new-cases-of-hiv-infection.csv /user/hiv_project/data/
-
+  1. Démarrer HDFS:
+     ```bash
+   start-dfs.sh
+   ```
+  3. Créer un répertoire HDFS pour les données:
+ ```bash
+  hdfs dfs -mkdir -p /user/hiv_project/data
+   ```
+  4. Charger le fichier CSV dans HDFS:
+   ```bash
+  hdfs dfs -put new-cases-of-hiv-infection.csv /user/hiv_project/data/
+   ```
 ### Step 2: Start the Data Pipeline
 Start each component in the following order:
 
@@ -45,7 +50,6 @@ Start the Streamlit visualization
 ### Step 3: Access the Dashboard
 Open your web browser and navigate to:
 
-bash:
 http://localhost:8501
 
 #### The dashboard allows you to:
