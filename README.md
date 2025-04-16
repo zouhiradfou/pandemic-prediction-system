@@ -28,11 +28,11 @@ This system integrates five major Big Data technologies to create an end-to-end 
 ### Step 1: Load Data into HDFS
   1. Démarrer HDFS:
      ```bash
-   start-dfs.sh
-   ```
+     start-dfs.sh
+     ```
   3. Créer un répertoire HDFS pour les données:
- ```bash
-  hdfs dfs -mkdir -p /user/hiv_project/data
+   ```bash
+   hdfs dfs -mkdir -p /user/hiv_project/data
    ```
   4. Charger le fichier CSV dans HDFS:
    ```bash
